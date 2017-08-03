@@ -6,4 +6,4 @@ RUN apt-get install locales && echo 'fr_FR.UTF-8 UTF-8' >> /etc/locale.gen && lo
 ENV LANG fr_FR.UTF-8
 
 # postGIS
-RUN apt-get install postgis
+RUN apt-get update && apt-get install -y postgis
