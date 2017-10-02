@@ -143,7 +143,7 @@ RUN apt-get install locales && echo 'fr_FR.UTF-8 UTF-8' >> /etc/locale.gen && lo
 ENV LANG fr_FR.UTF-8
 
 # postGIS
-ENV POSTGIS_MAJOR 2.1
+ENV POSTGIS_MAJOR 2.3
 
 RUN apt-get update \
       && apt-get install -y --no-install-recommends \
@@ -151,4 +151,3 @@ RUN apt-get update \
            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts \
            postgis \
       && rm -rf /var/lib/apt/lists/*
-
