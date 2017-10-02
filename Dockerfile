@@ -149,6 +149,6 @@ RUN apt-get update \
       && apt-get install -y --no-install-recommends \
            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
            postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts \
-           postgis=$POSTGIS_VERSION \
+           postgis \
       && rm -rf /var/lib/apt/lists/*
 
